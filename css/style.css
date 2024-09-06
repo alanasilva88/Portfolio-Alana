@@ -142,6 +142,10 @@ section.especialidades .flex{
     gap: 60px;
 }
 
+.especialidades-box ul{
+    list-style-type: none;
+}
+
 .especialidades .especialidades-box{
     color: #fafafa;
     padding: 40px;
@@ -251,7 +255,7 @@ section.portfolio a{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #B69E65;
+    background-color: #fafafa;
     border-radius: 40px;
     display: flex;
     align-items: center;
@@ -349,4 +353,73 @@ footer .line-footer p i{
 
 footer .line-footer p a{
     color: #fafafa;
+}
+
+/* Media Query para telas menores */
+@media (min-width: 320px) and (max-width: 360px) {
+    /* Botão de contato */
+    .btn-contato {
+        display: none;
+    }
+   
+}
+
+/* Media Query para telas até 768px */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column; /* Alinha o conteúdo em coluna */
+        align-items: center;    /* Centraliza horizontalmente */
+        text-align: center;     /* Centraliza o texto */
+    }
+
+    header .logo {
+        margin-bottom: 10px; /* Espaço abaixo do logo */
+    }
+
+    header nav {
+        width: 50%; /* Garante que o menu ocupe a largura total disponível */
+        margin-bottom: 10px; /* Espaço abaixo do menu */
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column; /* Alinha os itens do menu em coluna */
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0; /* Espaço entre os itens do menu */
+        text-align: center; /* Centraliza o texto dos itens do menu */
+    }
+
+    header nav ul a {
+        display: block; /* Garante que os links ocupem a largura total */
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo */
+    }
+    
+    section.formulario form {
+        padding: 0 10px; /* Adiciona padding para melhor visualização em telas menores */
+    }
+}
+
+/* Media Query para telas entre 768px e 860px */
+@media (min-width: 768px) and (max-width: 860px) {
+    .flex {
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    section.formulario form {
+        padding: 0 50px; /* Adiciona padding para centralizar o formulário com espaço */
+    }
 }

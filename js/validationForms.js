@@ -1,4 +1,4 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+document.getElementById('contactForm').addEventListener('submit', async function(event) {
     // Prevenir o envio do formulário
     event.preventDefault();
 
@@ -36,14 +36,11 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     if (message === '') {
         errors.push('A mensagem é obrigatória.');
     } else if (message.length < 10) {
-        errors.push('A messagem deve ter no mínimo 10 caracteres.');
+        errors.push('A mensagem deve ter no mínimo 10 caracteres.');
     }
 
     // Exibir erros, se existirem
     if (errors.length > 0) {
-        // Impede o envio do formulário
-        event.preventDefault();
-
         // Exibe as mensagens de erro
         errors.forEach(function(error) {
             const p = document.createElement('p');
@@ -51,8 +48,29 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             errorMessages.appendChild(p);
         });
     } else {
-        // Se não houver erros, o formulário pode ser enviado
-        alert('Formulário enviado com sucesso!');
-        this.submit();
+        // Se não houver erros, enviar o formulário via AJAX
+        const formData = new FormData(this);
+
+        try {
+            let response = await fetch("https://formspree.io/f/xrbzdydv", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // Exibir mensagem de sucesso
+                alert('Mensagem enviada com sucesso!');
+                this.reset(); // Limpar o formulário
+            } else {
+                // Exibir mensagem de erro se a resposta não for OK
+                errorMessages.innerHTML = "Ocorreu um erro ao enviar sua mensagem. Tente novamente.";
+            }
+        } catch (error) {
+            // Exibir mensagem de erro se algo der errado
+            errorMessages.innerHTML = "Ocorreu um erro inesperado. Tente novamente mais tarde.";
+        }
     }
 });
