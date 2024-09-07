@@ -24,6 +24,7 @@
       rel="stylesheet"
     />
     <script src="js/validationForms.js" defer></script>
+    <script src="menu.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Portifólio Alana Soares</title>
   </head>
@@ -49,7 +50,25 @@
                   Contato
               </button>
           </a>
-      </div>
+        </div>
+        <div class="btn-abrir-menu" id="btn-menu">
+          <i class="bi bi-list-ul"></i>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#topo-site">Início</a></li>
+              <li><a href="#especial">Especialidades</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#projeto">Projetos</a></li>
+              <li><a href="#forms">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="overlay-menu" id="overlay-menu"></div>
       </div>
     </header>
     <main>
