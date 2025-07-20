@@ -24,7 +24,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #B69E65;
+    background-color: #C5B358 ;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -38,7 +38,7 @@ h2.titulo {
 }
 
 h2.titulo span {
-    color: #B69E65;
+    color: #C5B358 ;
 }
 
 button:hover,
@@ -170,7 +170,7 @@ section.topo-site .flex {
 }
 
 .topo-site .txt-topo-site h1 span {
-    color: #B69E65;
+    color: #C5B358 ;
 }
 
 .topo-site .txt-topo-site p {
@@ -345,7 +345,7 @@ section.sobre .flex {
     width: 80%;
     margin: 1rem auto;
     padding: 0.5rem;
-    background-color: #B69E65;
+    background-color: #C5B358 ;
     color: #000;
     text-align: center;
     text-decoration: none;
@@ -407,7 +407,7 @@ form .btn-enviar {
 
 form .btn-enviar input[type=submit] {
     width: 120px;
-    background-color: #B69E65;
+    background-color: #C5B358 ;
     color: #000;
     font-weight: 700;
     cursor: pointer;
@@ -437,7 +437,7 @@ footer .line-footer {
 }
 
 footer .line-footer p i {
-    color: #B69E65;
+    color: #C5B358 ;
     font-size: 22px;
 }
 
