@@ -1,376 +1,302 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Desenvolvedora full-stack Alana Soares - Portfólio"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <script src="js/validationForms.js" defer></script>
-    <script src="menu.js" defer></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Portifólio Alana Soares</title>
-  </head>
-  <body>
-    <header>
-      <div class="interface">
-        <div class="logo">
-          <a href="#">
-            <img src="img/logo alana.png" alt="Logo-Alana" />
-          </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Desenvolvedora full-stack Alana Soares - Portfólio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <script src="js/validationForms.js" defer></script>
+  <script src="menu.js" defer></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Portifólio Alana Soares</title>
+</head>
+
+<body>
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo_alana.png" alt="Logo-Alana" />
+        </a>
+      </div>
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="#topo-site">Início</a></li>
+          <li><a href="#especial">Especialidades</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projeto">Projetos</a></li>
+        </ul>
+      </nav>
+      <div class="btn-contato">
+        <a href="#forms">
+          <button>Contato</button>
+        </a>
+      </div>
+      <div class="btn-abrir-menu" id="btn-menu">
+        <i class="bi bi-list-ul"></i>
+      </div>
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+          <i class="bi bi-x-lg"></i>
         </div>
-        <nav class="menu-desktop">
+        <nav>
           <ul>
             <li><a href="#topo-site">Início</a></li>
             <li><a href="#especial">Especialidades</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#projeto">Projetos</a></li>
+            <li><a href="#forms">Contato</a></li>
           </ul>
         </nav>
-        <div class="btn-contato">
-          <a href="#forms">
-            <button>Contato</button>
-          </a>
-        </div>
-        <div class="btn-abrir-menu" id="btn-menu">
-          <i class="bi bi-list-ul"></i>
-        </div>
-        <div class="menu-mobile" id="menu-mobile">
-          <div class="btn-fechar">
-            <i class="bi bi-x-lg"></i>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#topo-site">Início</a></li>
-              <li><a href="#especial">Especialidades</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#projeto">Projetos</a></li>
-              <li><a href="#forms">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="overlay-menu" id="overlay-menu"></div>
       </div>
-    </header>
-    <main>
-      <section id="topo-site" class="topo-site">
-        <div class="interface">
-          <div class="flex">
-            <div class="txt-topo-site">
-              <h1>
-                Desenvolvedora full-stack apaixonada por criar soluções digitais
-                inovadoras<span>.</span>
-              </h1>
-              <p>
-                Transformo ideias em realidade, criando interfaces incríveis e
-                back-ends escaláveis.
-              </p>
-              <div class="btn-contato">
-                <a
-                  href="https://docs.google.com/document/d/1uvICWe8GPEAy0M8vnc3ukW7aKrIsJxEriEqv0wtmR1I/edit?usp=sharing"
-                  target="_blank"
-                  ><button>Acesse meu currículo</button></a
-                >
-              </div>
-            </div>
-            <div class="img-topo-site">
-              <img src="img/alana.jpg" alt="Imagem Alana" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="especial" class="especialidades">
-        <div class="interface">
-          <h2 class="titulo">Minhas <span>Especialidades.</span></h2>
-          <div class="flex">
-            <div class="especialidades-box">
-              <i class="bi bi-file-earmark-code"></i>
-              <h3>Linguagens</h3>
-              <hr />
-              <img
-                src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                alt="TypeScript Badge"
-              />
-              <hr />
-              <img
-                src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
-                alt="JavaScript Badge"
-              />
-              <hr />
-              <img
-                src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white"
-                alt="C# Badge"
-              />
-            </div>
-            <div class="especialidades-box">
-              <i class="bi bi-gear"></i>
-              <h3>Ferramentas</h3>
-              <hr />
-              <img
-                src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                alt="React Badge"
-              />
-              <hr />
-              <img
-                src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"
-                alt="Angular Badge"
-              />
-              <hr />
-              <img
-                src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
-                alt="Express Badge"
-              />
-              <hr />
-              <img
-                src="https://img.shields.io/badge/-boostrap-0D1117?style=for-the-badge&logo=bootstrap&labelColor=0D1117"
-                alt="Bootstrap Badge"
-              />
-              <hr />
-              <img
-                src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
-                alt="TailwindCss Badge"
-              />
-            </div>
-            <div class="especialidades-box">
-              <i class="bi bi-microsoft-teams"></i>
-              <h3>Soft Skills</h3>
-              <hr />
-              <p>
-                Com base em minha experiência no desenvolvimento de software e
-                trabalho em equipe, desenvolvi várias soft skills importantes:
-              </p>
-              <ul>
-                <li><span>Comunicação Eficaz;</span></li>
-                <li><span>Resolução de Problemas;</span></li>
-                <li><span>Trabalho em Equipe;</span></li>
-                <li><span>Gestão de Tempo;</span></li>
-                <li><span>Adaptabilidade;</span></li>
-                <li><span>Empatia e Escuta Ativa.</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="sobre" class="sobre">
-        <div class="interface">
-          <div class="flex">
-            <div class="img-sobre">
-              <img src="img/alana-2.gif" alt="Imagem Alana-2" />
-            </div>
-            <div class="txt-sobre">
-              <h2>Muito prazer, <span>sou Alana Soares.</span></h2>
-              <p>
-                Olá! Sou uma desenvolvedora de software apaixonada em transição
-                de carreira. Com uma formação inicial em direito, decidi seguir
-                minha paixão pela tecnologia e, desde o final de 2022, tenho
-                investido intensamente em aprender e desenvolver minhas
-                habilidades técnicas.
-              </p>
-              <p>
-                Sempre me identifiquei com a área de tecnologia, e agora estou
-                plenamente dedicada a me tornar uma desenvolvedora de software
-                de excelência. Acredito que o caminho para o sucesso requer
-                dedicação e aprendizado contínuo, e estou animada para esta nova
-                aventura.
-              </p>
-              <div class="btn-social">
-                <a
-                  href="https://www.linkedin.com/in/alana-soares-silva/"
-                  target="_blank"
-                  ><button><i class="bi bi-linkedin"></i></button
-                ></a>
-                <a href="https://github.com/alanasilva88" target="_blank"
-                  ><button><i class="bi bi-github"></i></button
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="projeto" class="portfolio">
-        <div class="interface">
-          <h2 class="titulo">Meu <span>Portfólio.</span></h2>
-          <div class="portfolio-grid">
-            <!-- Projeto 1 -->
-            <div class="portfolio-card">
-              <img
-                src="https://projeto-code-game-react.vercel.app/assets/logo-QgLAffQ0.gif"
-                alt="Projeto Game Code"
-                class="project-image"
-              />
-              <h3>Game Code</h3>
-              <div class="tech-icons">
-                <i class="devicon-react-original" title="React"></i>
-                <i class="devicon-javascript-plain" title="JavaScript"></i>
-                <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
-                <i class="devicon-css3-plain" title="CSS"></i>
-              </div>
-              <p>
-                Game Code é uma página frontend de uma loja de games
-                criada para praticar React, Bootstrap e CSS. A página exibe uma galeria de
-                cards de jogos, utilizando componentes do React e CSS para
-                estilização. Esta aplicação foi implementada como um exercício
-                prático de desenvolvimento front-end.
-              </p>
-              <a
-                href="https://projeto-code-game-react.vercel.app/"
-                class="btn-deploy"
-                target="_blank"
-                >Ver Deploy</a
-              >
-              <a
-                href="https://github.com/alanasilva88/Projeto-Code-Game-React"
-                class="btn-deploy"
-                target="_blank"
-                >Ver Repositório</a
-              >
-            </div>
-
-            <!-- Projeto 2 -->
-            <div class="portfolio-card">
-              <img
-                src="https://my-task2-2af62.web.app/assets/logo-myTask-60pJH6sO.png"
-                alt="Projeto My Task"
-                class="project-image"
-              />
-              <h3>My Task</h3>
-              <div class="tech-icons">
-                <i class="devicon-react-original" title="React"></i>
-                <i class="devicon-javascript-plain" title="JavaScript"></i>
-                <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
-                <i class="devicon-tailwindcss-original" title="TailwindCss"></i>
-                <i class="devicon-firebase-plain" title="Firebase"></i>
-              </div>
-              <p>MyTask é um sistema para gerenciamento de tarefas pessoais. Com esta aplicação, você pode cadastrar, visualizar, editar e excluir suas atividades diárias de maneira fácil e organizada.</p>
-              <a
-                href="https://my-task2-2af62.web.app/"
-                class="btn-deploy"
-                target="_blank"
-                >Ver Deploy</a
-              >
-              <a
-                href="https://github.com/alanasilva88/FullReactSoulCode-React-Firebase"
-                class="btn-deploy"
-                target="_blank"
-                >Ver Repositório</a
-              >              
-            </div>
-
-            <!-- Projeto 3 -->
-            <div class="portfolio-card">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D4D22AQE8ZA92Od58CQ/feedshare-shrink_800/feedshare-shrink_800/0/1725285807945?e=1729123200&v=beta&t=yuxBmvrGeD7NpXPOfMX7RjoIp4ntBDA5KnYJpC9Nf54"
-                alt="Projeto SoulDecor"
-                class="project-image"
-              />
-              <h3>SoulDecor</h3>
-              <div class="tech-icons">
-                <i class="devicon-react-original" title="React"></i>
-                <i class="devicon-javascript-plain" title="JavaScript"></i>
-                <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
-                <i class="devicon-mysql-plain" title="MySql"></i>
-                <i class="devicon-firebase-plain" title="Firebase"></i>
-              </div>
-              <p>Feito em equipe partimos do zero para criar um e-commerce completo. Uma loja online que precisava de uma solução robusta para gerenciar produtos, clientes e vendedores. Desenvolvemos uma aplicação web que permite aos usuários venderem produtos de diversas categorias e realizarem compras, com funcionalidades avançadas de busca, ordenação e filtragem. O objetivo foi oferecer uma experiência de compra e venda online simples e eficiente.</p>
-              <a
-                href="https://souldecor.vercel.app/"
-                class="btn-deploy"
-                target="_blank"
-                >Ver Deploy</a
-              >
-              <a
-                href="https://github.com/alanasilva88/e-commerce-rn2-back"
-                class="btn-deploy"
-                target="_blank"
-                >Ver Repositório [back]</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="forms" class="formulario">
-        <div class="interface">
-          <h2 class="titulo">Fala <span>comigo.</span></h2>
-          <form id="contactForm">
-            <div id="errorMessages"></div>
-            <input
-              type="text"
-              maxlength="100"
-              name="name"
-              id="name"
-              placeholder="Seu nome:"
-              required
-            />
-            <input
-              type="email"
-              maxlength="50"
-              name="email"
-              id="email"
-              placeholder="Seu email:"
-              required
-            />
-            <input
-              type="tel"
-              maxlength="12"
-              name="phone"
-              id="phone"
-              placeholder="Seu celular:"
-            />
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Sua mensagem:"
-              required
-            ></textarea>
-            <div class="btn-enviar">
-              <input type="submit" value="Enviar" />
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer>
+      <div class="overlay-menu" id="overlay-menu"></div>
+    </div>
+  </header>
+  <main>
+    <section id="topo-site" class="topo-site">
       <div class="interface">
-        <div class="line-footer">
-          <div class="flex">
-            <div class="logo-footer">
-              <a href="#">
-                <img src="img/logo alana.png" alt="Logo-Alana" />
-              </a>
+        <div class="flex">
+          <div class="txt-topo-site">
+            <h1>
+              Desenvolvedora full-stack apaixonada por criar soluções digitais
+              inovadoras<span>.</span>
+            </h1>
+            <p>
+              Transformo ideias em realidade, criando interfaces incríveis e
+              back-ends escaláveis.
+            </p>
+            <div class="btn-contato">
+              <a href="https://docs.google.com/document/d/1uvICWe8GPEAy0M8vnc3ukW7aKrIsJxEriEqv0wtmR1I/edit?usp=sharing"
+                target="_blank"><button>Acesse meu currículo</button></a>
             </div>
+          </div>
+          <div class="img-topo-site">
+            <img src="img/alana.jpg" alt="Imagem Alana" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="especial" class="especialidades">
+      <div class="interface">
+        <h2 class="titulo">Minhas <span>Especialidades.</span></h2>
+        <div class="flex">
+          <div class="especialidades-box">
+            <i class="bi bi-file-earmark-code"></i>
+            <h3>Linguagens</h3>
+            <hr />
+            <img
+              src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+              alt="TypeScript Badge" />
+            <hr />
+            <img
+              src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+              alt="JavaScript Badge" />
+            <hr />
+            <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white"
+              alt="C# Badge" />
+          </div>
+          <div class="especialidades-box">
+            <i class="bi bi-gear"></i>
+            <h3>Ferramentas</h3>
+            <hr />
+            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+              alt="React Badge" />
+            <hr />
+            <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"
+              alt="Angular Badge" />
+            <hr />
+            <img
+              src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
+              alt="Express Badge" />
+            <hr />
+            <img
+              src="https://img.shields.io/badge/-boostrap-0D1117?style=for-the-badge&logo=bootstrap&labelColor=0D1117"
+              alt="Bootstrap Badge" />
+            <hr />
+            <img
+              src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+              alt="TailwindCss Badge" />
+          </div>
+          <div class="especialidades-box">
+            <i class="bi bi-microsoft-teams"></i>
+            <h3>Soft Skills</h3>
+            <hr />
+            <p>
+              Com base em minha experiência no desenvolvimento de software e
+              trabalho em equipe, desenvolvi várias soft skills importantes:
+            </p>
+            <ul>
+              <li><span>Comunicação Eficaz;</span></li>
+              <li><span>Resolução de Problemas;</span></li>
+              <li><span>Trabalho em Equipe;</span></li>
+              <li><span>Gestão de Tempo;</span></li>
+              <li><span>Adaptabilidade;</span></li>
+              <li><span>Empatia e Escuta Ativa.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sobre" class="sobre">
+      <div class="interface">
+        <div class="flex">
+          <div class="img-sobre">
+            <img src="img/alana-2.gif" alt="Imagem Alana-2" />
+          </div>
+          <div class="txt-sobre">
+            <h2>Muito prazer, <span>sou Alana Soares.</span></h2>
+            <p>
+              Olá! Sou uma desenvolvedora de software apaixonada em transição
+              de carreira. Com uma formação inicial em direito, decidi seguir
+              minha paixão pela tecnologia e, desde o final de 2022, tenho
+              investido intensamente em aprender e desenvolver minhas
+              habilidades técnicas.
+            </p>
+            <p>
+              Sempre me identifiquei com a área de tecnologia, e agora estou
+              plenamente dedicada a me tornar uma desenvolvedora de software
+              de excelência. Acredito que o caminho para o sucesso requer
+              dedicação e aprendizado contínuo, e estou animada para esta nova
+              aventura.
+            </p>
             <div class="btn-social">
-              <a href="https://www.linkedin.com/in/alana-soares-silva/"
-                ><button><i class="bi bi-linkedin"></i></button
-              ></a>
-              <a href="https://github.com/alanasilva88"
-                ><button><i class="bi bi-github"></i></button
-              ></a>
+              <a href="https://www.linkedin.com/in/alana-soares-silva/" target="_blank"><button><i
+                    class="bi bi-linkedin"></i></button></a>
+              <a href="https://github.com/alanasilva88" target="_blank"><button><i
+                    class="bi bi-github"></i></button></a>
             </div>
           </div>
         </div>
-        <div class="line-footer borda"></div>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section id="projeto" class="portfolio">
+      <div class="interface">
+        <h2 class="titulo">Meu <span>Portfólio.</span></h2>
+        <div class="portfolio-grid">
+          <!-- Projeto 1 -->
+          <div class="portfolio-card">
+            <img src="img/game_code.png" alt="Projeto Game Code" class="project-image" />
+            <h3>Game Code</h3>
+            <div class="tech-icons">
+              <i class="devicon-react-original" title="React"></i>
+              <i class="devicon-javascript-plain" title="JavaScript"></i>
+              <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
+              <i class="devicon-css3-plain" title="CSS"></i>
+            </div>
+            <p>
+              Game Code é uma página frontend de uma loja de games
+              criada para praticar React, Bootstrap e CSS. A página exibe uma galeria de
+              cards de jogos, utilizando componentes do React e CSS para
+              estilização. Esta aplicação foi implementada como um exercício
+              prático de desenvolvimento front-end.
+            </p>
+            <a href="https://projeto-code-game-react.vercel.app/" class="btn-deploy" target="_blank">Ver Deploy</a>
+            <a href="https://github.com/alanasilva88/Projeto-Code-Game-React" class="btn-deploy" target="_blank">Ver
+              Repositório</a>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div class="portfolio-card">
+            <img src="img/my_task.png" alt="Projeto My Task" class="project-image" />
+            <h3>My Task</h3>
+            <div class="tech-icons">
+              <i class="devicon-react-original" title="React"></i>
+              <i class="devicon-javascript-plain" title="JavaScript"></i>
+              <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
+              <i class="devicon-tailwindcss-original" title="TailwindCss"></i>
+              <i class="devicon-firebase-plain" title="Firebase"></i>
+            </div>
+            <p>MyTask é um sistema para gerenciamento de tarefas pessoais. Com esta aplicação, você pode cadastrar,
+              visualizar, editar e excluir suas atividades diárias de maneira fácil e organizada.</p>
+            <a href="https://my-task2-2af62.web.app/" class="btn-deploy" target="_blank">Ver Deploy</a>
+            <a href="https://github.com/alanasilva88/FullReactSoulCode-React-Firebase" class="btn-deploy"
+              target="_blank">Ver Repositório</a>
+          </div>
+
+          <!-- Projeto 3 -->
+          <div class="portfolio-card">
+            <img src="img/soul_de_cor.png" alt="Projeto SoulDecor" class="project-image" />
+            <h3>SoulDecor</h3>
+            <div class="tech-icons">
+              <i class="devicon-react-original" title="React"></i>
+              <i class="devicon-javascript-plain" title="JavaScript"></i>
+              <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
+              <i class="devicon-mysql-plain" title="MySql"></i>
+              <i class="devicon-firebase-plain" title="Firebase"></i>
+            </div>
+            <p>Feito em equipe partimos do zero para criar um e-commerce completo. Uma loja online que precisava de uma
+              solução robusta para gerenciar produtos, clientes e vendedores. Desenvolvemos uma aplicação web que
+              permite aos usuários venderem produtos de diversas categorias e realizarem compras, com funcionalidades
+              avançadas de busca, ordenação e filtragem. O objetivo foi oferecer uma experiência de compra e venda
+              online simples e eficiente.</p>
+            <a href="https://souldecor.vercel.app/" class="btn-deploy" target="_blank">Ver Deploy</a>
+            <a href="https://github.com/alanasilva88/e-commerce-rn2-back" class="btn-deploy" target="_blank">Ver
+              Repositório [back]</a>
+          </div>
+
+          <!-- Projeto 4 -->
+          <div class="portfolio-card">
+            <img src="img/previsao_tempo.png" alt="Projeto Previsão do tempo" class="project-image" />
+            <h3>Previsão do tempo</h3>
+            <div class="tech-icons">
+              <i class="devicon-react-original" title="React"></i>
+              <i class="devicon-javascript-plain" title="JavaScript"></i>
+              <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
+            </div>
+            <p>Este projeto fornece informações detalhadas sobre as condições meteorológicas de diferentes localidades,
+              utilizando dados de uma API de previsão do tempo. O sistema exibe dados como temperatura, umidade,
+              velocidade do vento e previsões futuras.</p>
+            <a href="https://previsao-tempo-two-theta.vercel.app/" class="btn-deploy" target="_blank">Ver Deploy</a>
+            <a href="https://github.com/alanasilva88/PrevisaoTempo" class="btn-deploy" target="_blank">Ver
+              Repositório</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="forms" class="formulario">
+      <div class="interface">
+        <h2 class="titulo">Fala <span>comigo.</span></h2>
+        <form id="contactForm">
+          <div id="errorMessages"></div>
+          <input type="text" maxlength="100" name="name" id="name" placeholder="Seu nome:" required />
+          <input type="email" maxlength="50" name="email" id="email" placeholder="Seu email:" required />
+          <input type="tel" maxlength="12" name="phone" id="phone" placeholder="Seu celular:" />
+          <textarea name="message" id="message" placeholder="Sua mensagem:" required></textarea>
+          <div class="btn-enviar">
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="interface">
+      <div class="line-footer">
+        <div class="flex">
+          <div class="logo-footer">
+            <a href="#">
+              <img src="img/logo_alana.png" alt="Logo-Alana" />
+            </a>
+          </div>
+          <div class="btn-social">
+            <a href="https://www.linkedin.com/in/alana-soares-silva/"><button><i
+                  class="bi bi-linkedin"></i></button></a>
+            <a href="https://github.com/alanasilva88"><button><i class="bi bi-github"></i></button></a>
+          </div>
+        </div>
+      </div>
+      <div class="line-footer borda"></div>
+    </div>
+  </footer>
+</body>
+
 </html>
