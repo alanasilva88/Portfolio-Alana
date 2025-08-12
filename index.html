@@ -82,7 +82,7 @@
             </div>
           </div>
           <div class="img-topo-site">
-            <img src="img/alana.jpg" alt="Imagem Alana" />
+            <img src="img/alana_linkedin.png" alt="Imagem Alana" />
           </div>
         </div>
       </div>
@@ -90,7 +90,7 @@
     <section id="especial" class="especialidades">
       <div class="interface">
         <h2 class="titulo">Minhas <span>Especialidades.</span></h2>
-        <div class="flex">
+        <div class="carousel-especialidades">
           <div class="especialidades-box">
             <i class="bi bi-file-earmark-code"></i>
             <h3>Linguagens</h3>
@@ -152,7 +152,7 @@
       <div class="interface">
         <div class="flex">
           <div class="img-sobre">
-            <img src="img/alana-2.gif" alt="Imagem Alana-2" />
+            <img src="img/alana_linkedin.png" alt="Imagem Alana" />
           </div>
           <div class="txt-sobre">
             <h2>Muito prazer, <span>sou Alana Soares.</span></h2>
@@ -336,7 +336,7 @@
         slidesToScroll: 1, // Quantidade de slides que rolam a cada clique
         autoplay: true, // Auto-play do carrossel
         autoplaySpeed: 2000, // Velocidade do auto-play em milissegundos
-        dots: true, // Mostra as bolinhas de navegação
+        dots: false, // Mostra as bolinhas de navegação
         arrows: true, // Mostra as setas de navegação
         infinite: true, // Rola infinitamente
 
@@ -353,6 +353,30 @@
           },
           {
             breakpoint: 600, // Quando a tela tiver 600px ou menos
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+      $('.carousel-especialidades').slick({
+        slidesToShow: 2, // Quantidade de slides visíveis em telas grandes
+        slidesToScroll: 1, // Quantidade de slides que rolam a cada clique
+        autoplay: false, // O carrossel de especialidades não tem auto-play
+        dots: false, // Mostra as bolinhas de navegação
+        arrows: true, // Mostra as setas de navegação
+        infinite: true, // Rola infinitamente
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 600,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1

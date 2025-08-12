@@ -24,7 +24,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #C5B358 ;
+    background-color: #C5B358;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -38,7 +38,7 @@ h2.titulo {
 }
 
 h2.titulo span {
-    color: #C5B358 ;
+    color: #C5B358;
 }
 
 button:hover,
@@ -170,7 +170,7 @@ section.topo-site .flex {
 }
 
 .topo-site .txt-topo-site h1 span {
-    color: #C5B358 ;
+    color: #C5B358;
 }
 
 .topo-site .txt-topo-site p {
@@ -205,7 +205,7 @@ section.topo-site .flex {
 
 /* ESTILOS ESPECIALIDADES */
 section.especialidades {
-    padding: 40px 4%;
+    padding: 80px 4%;
 }
 
 section.especialidades .flex {
@@ -220,15 +220,27 @@ section.especialidades .flex {
     color: #fafafa;
     padding: 40px;
     border-radius: 20px;
-    border: 2px solid #fafafa;
+    /* border: 2px solid #fafafa; */
     margin-top: 45px;
-    transition: .2s;
+    /* transition: .2s; */
+    background: #000;
+    min-height: 550px;
+    /* Ajuste essa altura para o tamanho que você preferir */
+    max-width: 400px;
+    /* Limita a largura máxima de cada card */
+    margin: 0 auto;
+    /* Centraliza o card se houver espaço extra */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.especialidades .especialidades-box:hover {
+/* .especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #fafafa;
-}
+} */
 
 .especialidades .especialidades-box i {
     font-size: 70px;
@@ -268,7 +280,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-    color: #fcdb8d;
+    color: #C5B358;
     display: block;
 }
 
@@ -291,7 +303,7 @@ section.sobre .flex {
 
 /* ESTILO PORTFÓLIO */
 .carousel-projetos {
-    padding: 80px 4%;
+    padding: 40px 4%;
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     gap: 2rem;
@@ -299,22 +311,30 @@ section.sobre .flex {
     text-align: center;
 }
 
-/* Estilo para as setas de navegação do Slick */
-.slick-prev:before,
-.slick-next:before {
-  font-size: 2rem; /* Aumenta o tamanho das setas */
-  color: #c5b358; /* Mude para uma cor visível no seu tema */
-  opacity: 1; /* Garante que as setas não estejam transparentes */
-}
-
-/* Posicionamento e z-index das setas para evitar sobreposição */
-.slick-prev,
-.slick-next {
-  z-index: 100; /* Garante que os botões fiquem acima de outros elementos */
-}
-
- .projeto-item {
+.projeto-item {
     background: #000;
+    min-height: 550px;
+    /* Ajuste essa altura para o tamanho que você preferir */
+    max-width: 400px;
+    /* Limita a largura máxima de cada card */
+    margin: 0 auto;
+    /* Centraliza o card se houver espaço extra */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Solução mais robusta para remover o quadrado preto ao passar o mouse */
+.slick-prev:focus,
+.slick-next:focus,
+.slick-prev:hover,
+.slick-next:hover {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
 }
 
 /* .projeto-item:hover {
@@ -355,7 +375,7 @@ section.sobre .flex {
     width: 80%;
     margin: 1rem auto;
     padding: 0.5rem;
-    background-color: #C5B358 ;
+    background-color: #C5B358;
     color: #000;
     text-align: center;
     text-decoration: none;
@@ -371,7 +391,7 @@ section.sobre .flex {
 
 /* ESTILO FORMS */
 section.formulario {
-    padding: 80px 4%;
+    padding: 40px 4%;
 }
 
 form {
@@ -417,7 +437,7 @@ form .btn-enviar {
 
 form .btn-enviar input[type=submit] {
     width: 120px;
-    background-color: #C5B358 ;
+    background-color: #C5B358;
     color: #000;
     font-weight: 700;
     cursor: pointer;
@@ -447,7 +467,7 @@ footer .line-footer {
 }
 
 footer .line-footer p i {
-    color: #C5B358 ;
+    color: #C5B358;
     font-size: 22px;
 }
 
@@ -512,12 +532,12 @@ footer .line-footer p a {
 
     /* ESPECIALIDADES */
     section.especiliadades {
-        padding: 40px 8%;
+        padding: 40px 4%;
     }
 
     /* SOBRE */
     section.sobre {
-        padding: 80px 8%;
+        padding: 40px 4%;
     }
 
     .sobre .txt-sobre h2 {
