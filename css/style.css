@@ -290,27 +290,37 @@ section.sobre .flex {
 }
 
 /* ESTILO PORTFÓLIO */
-.portfolio-grid {
+.carousel-projetos {
     padding: 80px 4%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     gap: 2rem;
     color: #fafafa;
     text-align: center;
 }
 
-.portfolio-card {
-    background: #000;
-    border-radius: 8px;
-    border: 2px solid #fafafa;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+/* Estilo para as setas de navegação do Slick */
+.slick-prev:before,
+.slick-next:before {
+  font-size: 2rem; /* Aumenta o tamanho das setas */
+  color: #c5b358; /* Mude para uma cor visível no seu tema */
+  opacity: 1; /* Garante que as setas não estejam transparentes */
 }
 
-.portfolio-card:hover {
+/* Posicionamento e z-index das setas para evitar sobreposição */
+.slick-prev,
+.slick-next {
+  z-index: 100; /* Garante que os botões fiquem acima de outros elementos */
+}
+
+ .projeto-item {
+    background: #000;
+}
+
+/* .projeto-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px #fafafa;
-}
+} */
 
 .project-image {
     width: 100%;
@@ -318,7 +328,7 @@ section.sobre .flex {
     object-fit: cover;
 }
 
-.portfolio-card h3 {
+.projeto-item h3 {
     font-size: 1.5rem;
     margin: 1rem;
 }
@@ -335,12 +345,12 @@ section.sobre .flex {
     color: #fcdb8d;
 }
 
-.portfolio-card p {
+.projeto-item p {
     padding: 0 1rem;
     margin-bottom: 1rem;
 }
 
-.btn-deploy {
+.btn-projeto {
     display: block;
     width: 80%;
     margin: 1rem auto;
@@ -353,7 +363,7 @@ section.sobre .flex {
     transition: background-color 0.3s ease;
 }
 
-.btn-deploy:hover {
+.btn-projeto:hover {
     background-color: #fcdb8d;
     font-weight: 600;
     cursor: pointer;

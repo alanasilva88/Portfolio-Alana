@@ -17,6 +17,8 @@
   <script src="js/validationForms.js" defer></script>
   <script src="menu.js" defer></script>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <title>Portifólio Alana Soares</title>
 </head>
 
@@ -181,9 +183,8 @@
     <section id="projeto" class="portfolio">
       <div class="interface">
         <h2 class="titulo">Meu <span>Portfólio.</span></h2>
-        <div class="portfolio-grid">
-          <!-- Projeto 1 -->
-          <div class="portfolio-card">
+        <div class="carousel-projetos">
+          <div class="projeto-item">
             <img src="img/game_code.png" alt="Projeto Game Code" class="project-image" />
             <h3>Game Code</h3>
             <div class="tech-icons">
@@ -193,19 +194,18 @@
               <i class="devicon-css3-plain" title="CSS"></i>
             </div>
             <p>
-              Game Code é uma página frontend de uma loja de games
-              criada para praticar React, Bootstrap e CSS. A página exibe uma galeria de
+              Game Code é uma página frontend de uma loja de games criada para
+              praticar React, Bootstrap e CSS. A página exibe uma galeria de
               cards de jogos, utilizando componentes do React e CSS para
               estilização. Esta aplicação foi implementada como um exercício
               prático de desenvolvimento front-end.
             </p>
-            <a href="https://projeto-code-game-react.vercel.app/" class="btn-deploy" target="_blank">Ver Deploy</a>
-            <a href="https://github.com/alanasilva88/Projeto-Code-Game-React" class="btn-deploy" target="_blank">Ver
+            <a href="https://projeto-code-game-react.vercel.app/" class="btn-projeto" target="_blank">Ver Deploy</a>
+            <a href="https://github.com/alanasilva88/Projeto-Code-Game-React" class="btn-projeto" target="_blank">Ver
               Repositório</a>
           </div>
 
-          <!-- Projeto 2 -->
-          <div class="portfolio-card">
+          <div class="projeto-item">
             <img src="img/my_task.png" alt="Projeto My Task" class="project-image" />
             <h3>My Task</h3>
             <div class="tech-icons">
@@ -215,15 +215,17 @@
               <i class="devicon-tailwindcss-original" title="TailwindCss"></i>
               <i class="devicon-firebase-plain" title="Firebase"></i>
             </div>
-            <p>MyTask é um sistema para gerenciamento de tarefas pessoais. Com esta aplicação, você pode cadastrar,
-              visualizar, editar e excluir suas atividades diárias de maneira fácil e organizada.</p>
-            <a href="https://my-task2-2af62.web.app/" class="btn-deploy" target="_blank">Ver Deploy</a>
-            <a href="https://github.com/alanasilva88/FullReactSoulCode-React-Firebase" class="btn-deploy"
+            <p>
+              MyTask é um sistema para gerenciamento de tarefas pessoais. Com
+              esta aplicação, você pode cadastrar, visualizar, editar e excluir
+              suas atividades diárias de maneira fácil e organizada.
+            </p>
+            <a href="https://my-task2-2af62.web.app/" class="btn-projeto" target="_blank">Ver Deploy</a>
+            <a href="https://github.com/alanasilva88/FullReactSoulCode-React-Firebase" class="btn-projeto"
               target="_blank">Ver Repositório</a>
           </div>
 
-          <!-- Projeto 3 -->
-          <div class="portfolio-card">
+          <div class="projeto-item">
             <img src="img/soul_de_cor.png" alt="Projeto SoulDecor" class="project-image" />
             <h3>SoulDecor</h3>
             <div class="tech-icons">
@@ -233,18 +235,20 @@
               <i class="devicon-mysql-plain" title="MySql"></i>
               <i class="devicon-firebase-plain" title="Firebase"></i>
             </div>
-            <p>Feito em equipe partimos do zero para criar um e-commerce completo. Uma loja online que precisava de uma
-              solução robusta para gerenciar produtos, clientes e vendedores. Desenvolvemos uma aplicação web que
-              permite aos usuários venderem produtos de diversas categorias e realizarem compras, com funcionalidades
-              avançadas de busca, ordenação e filtragem. O objetivo foi oferecer uma experiência de compra e venda
-              online simples e eficiente.</p>
-            <a href="https://souldecor.vercel.app/" class="btn-deploy" target="_blank">Ver Deploy</a>
-            <a href="https://github.com/alanasilva88/e-commerce-rn2-back" class="btn-deploy" target="_blank">Ver
+            <p>
+              Feito em equipe partimos do zero para criar um e-commerce
+              completo. Desenvolvemos uma aplicação web que permite aos usuários
+              venderem produtos de diversas categorias e realizarem compras, com
+              funcionalidades avançadas de busca, ordenação e filtragem. O
+              objetivo foi oferecer uma experiência de compra e venda online
+              simples e eficiente.
+            </p>
+            <a href="https://souldecor.vercel.app/" class="btn-projeto" target="_blank">Ver Deploy</a>
+            <a href="https://github.com/alanasilva88/e-commerce-rn2-back" class="btn-projeto" target="_blank">Ver
               Repositório [back]</a>
           </div>
 
-          <!-- Projeto 4 -->
-          <div class="portfolio-card">
+          <div class="projeto-item">
             <img src="img/previsao_tempo.png" alt="Projeto Previsão do tempo" class="project-image" />
             <h3>Previsão do tempo</h3>
             <div class="tech-icons">
@@ -252,13 +256,39 @@
               <i class="devicon-javascript-plain" title="JavaScript"></i>
               <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
             </div>
-            <p>Este projeto fornece informações detalhadas sobre as condições meteorológicas de diferentes localidades,
-              utilizando dados de uma API de previsão do tempo. O sistema exibe dados como temperatura, umidade,
-              velocidade do vento e previsões futuras.</p>
-            <a href="https://previsao-tempo-two-theta.vercel.app/" class="btn-deploy" target="_blank">Ver Deploy</a>
-            <a href="https://github.com/alanasilva88/PrevisaoTempo" class="btn-deploy" target="_blank">Ver
+            <p>
+              Este projeto fornece informações detalhadas sobre as condições
+              meteorológicas de diferentes localidades, utilizando dados de uma
+              API de previsão do tempo. O sistema exibe dados como temperatura,
+              umidade, velocidade do vento e previsões futuras.
+            </p>
+            <a href="https://previsao-tempo-two-theta.vercel.app/" class="btn-projeto" target="_blank">Ver Deploy</a>
+            <a href="https://github.com/alanasilva88/PrevisaoTempo" class="btn-projeto" target="_blank">Ver
               Repositório</a>
           </div>
+
+          <div class="projeto-item">
+            <img src="img/gerador_bio.png" alt="Gerador de Bio para LinkedIn" class="project-image" />
+            <h3>Gerador de Bio LinkedIn</h3>
+            <div class="tech-icons">
+              <i class="devicon-react-original" title="React"></i>
+              <i class="devicon-javascript-plain" title="JavaScript"></i>
+              <i class="devicon-nodejs-plain" title="Node.js"></i>
+              <i class="devicon-express-original" title="Express.js"></i>
+            </div>
+            <p>
+              Uma aplicação Full Stack para gerar bios profissionais e personalizadas
+              para o LinkedIn usando Inteligência Artificial. Este projeto utiliza a API da OpenAI para gerar
+              conteúdo de alta qualidade em tempo real.
+            </p>
+            <!-- <a href="https://generate-bio-linkedin-front.vercel.app" class="btn-projeto" target="_blank">Ver Deploy
+              [Front]</a> -->
+            <a href="https://github.com/alanasilva88/generate-bio-linkedIn-front" class="btn-projeto"
+              target="_blank">Ver Repositório [Front]</a>
+            <a href="https://github.com/alanasilva88/generate-bio-linkedIn-back" class="btn-projeto" target="_blank">Ver
+              Repositório [Back]</a>
+          </div>
+
         </div>
       </div>
     </section>
@@ -297,6 +327,41 @@
       <div class="line-footer borda"></div>
     </div>
   </footer>
+  <script type="text/javascript" src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.carousel-projetos').slick({
+        slidesToShow: 2, // Quantidade de slides visíveis em telas grandes
+        slidesToScroll: 1, // Quantidade de slides que rolam a cada clique
+        autoplay: true, // Auto-play do carrossel
+        autoplaySpeed: 2000, // Velocidade do auto-play em milissegundos
+        dots: true, // Mostra as bolinhas de navegação
+        arrows: true, // Mostra as setas de navegação
+        infinite: true, // Rola infinitamente
+
+        // Configurações responsivas!
+        responsive: [
+          {
+            breakpoint: 1024, // Quando a tela tiver 1024px ou menos
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600, // Quando a tela tiver 600px ou menos
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
 </body>
 
 </html>
