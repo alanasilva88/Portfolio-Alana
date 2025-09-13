@@ -1,11 +1,4 @@
 /* ESTILO GERAL */
-:root {
-    --cor-principal: #C5B358;
-    --cor-secundaria: #fcdb8d;
-    --cor-texto: #fafafa;
-    --cor-fundo: #000;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +7,7 @@
 }
 
 body {
-    background-color:  var(--cor-fundo);
+    background-color: black;
     height: 100vh;
 }
 
@@ -31,7 +24,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: (var(--cor-principal));
+    background-color: #C5B358 ;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -39,18 +32,18 @@ body {
 }
 
 h2.titulo {
-    color: var(--cor-texto);
+    color: #fafafa;
     font-size: 38px;
     text-align: center;
 }
 
 h2.titulo span {
-    color: (var(--cor-principal));
+    color: #C5B358 ;
 }
 
 button:hover,
 form .btn-enviar input[type=submit]:hover {
-    box-shadow: 0px 0px 8px var(--cor-secundaria);
+    box-shadow: 0px 0px 8px #fcdb8d;
     transform: scale(1.05);
 }
 
@@ -74,7 +67,7 @@ header a {
 }
 
 header nav.menu-desktop a:hover {
-    color: (var(--cor-texto));
+    color: #fafafa;
     transform: scale(1.2);
 }
 
@@ -97,12 +90,12 @@ header nav.menu-desktop ul li {
 }
 
 .btn-abrir-menu i {
-    color: var(--cor-secundaria);
+    color: #fcdb8d;
     font-size: 40px;
 }
 
 .menu-mobile {
-    background-color: var(--cor-fundo);
+    background-color: black;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -126,7 +119,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile .btn-fechar i {
-    color: var(--cor-texto);
+    color: #fafafa;
     font-size: 30px;
 
 }
@@ -136,7 +129,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile nav ul li a {
-    color: var(var(--cor-texto));
+    color: #fafafa;
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
@@ -145,7 +138,7 @@ header nav.menu-desktop ul li {
 
 .menu-mobile nav ul li a:hover {
     background-color: #313131;
-    color:  var(--cor-texto);
+    color: #fafafa;
 }
 
 .overlay-menu {
@@ -171,17 +164,17 @@ section.topo-site .flex {
 }
 
 .topo-site h1 {
-    color:  var(--cor-texto);
+    color: #fafafa;
     font-size: 42px;
     line-height: 40px;
 }
 
 .topo-site .txt-topo-site h1 span {
-    color:  var(--cor-principal);
+    color: #C5B358 ;
 }
 
 .topo-site .txt-topo-site p {
-    color:  var(--cor-texto);
+    color: #fafafa;
     margin: 40px 0;
 }
 
@@ -189,7 +182,7 @@ section.topo-site .flex {
     /* height: 30%; */
     width: 50%;
     border-radius: 20%;
-    box-shadow: 0px 0px 8px  var(--cor-secundaria);
+    box-shadow: 0px 0px 8px #fcdb8d;
 }
 
 /* não funciona com position static que é o padrão */
@@ -212,7 +205,7 @@ section.topo-site .flex {
 
 /* ESTILOS ESPECIALIDADES */
 section.especialidades {
-    padding: 80px 4%;
+    padding: 40px 4%;
 }
 
 section.especialidades .flex {
@@ -224,34 +217,22 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box {
-    color:  var(--cor-texto);
+    color: #fafafa;
     padding: 40px;
     border-radius: 20px;
-    /* border: 2px solid #fafafa; */
+    border: 2px solid #fafafa;
     margin-top: 45px;
-    /* transition: .2s; */
-    background:  var(--cor-fundo);
-    min-height: 550px;
-    /* Ajuste essa altura para o tamanho que você preferir */
-    max-width: 400px;
-    /* Limita a largura máxima de cada card */
-    margin: 0 auto;
-    /* Centraliza o card se houver espaço extra */
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    transition: .2s;
 }
 
-/* .especialidades .especialidades-box:hover {
+.especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #fafafa;
-} */
+}
 
 .especialidades .especialidades-box i {
     font-size: 70px;
-    color:  var(--cor-secundaria);
+    color: #fcdb8d;
 }
 
 .especialidades .especialidades-box h3 {
@@ -277,7 +258,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre {
-    color:  var(--cor-texto);
+    color: #fafafa;
 }
 
 .sobre .txt-sobre h2 {
@@ -287,7 +268,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-    color:  var(--cor-principal);
+    color: #fcdb8d;
     display: block;
 }
 
@@ -301,7 +282,7 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: var(--cor-secundaria);
+    background-color: #fcdb8d;
     font-size: 20px;
     cursor: pointer;
     margin: 0 6px;
@@ -309,45 +290,27 @@ section.sobre .flex {
 }
 
 /* ESTILO PORTFÓLIO */
-.carousel-projetos {
-    padding: 40px 4%;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+.portfolio-grid {
+    padding: 80px 4%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    color:  var(--cor-texto);
+    color: #fafafa;
     text-align: center;
 }
 
-.projeto-item {
-    background: var(--cor-fundo);
-    min-height: 550px;
-    /* Ajuste essa altura para o tamanho que você preferir */
-    max-width: 400px;
-    /* Limita a largura máxima de cada card */
-    margin: 0 auto;
-    /* Centraliza o card se houver espaço extra */
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.portfolio-card {
+    background: #000;
+    border-radius: 8px;
+    border: 2px solid #fafafa;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-/* Solução mais robusta para remover o quadrado preto ao passar o mouse */
-.slick-prev:focus,
-.slick-next:focus,
-.slick-prev:hover,
-.slick-next:hover {
-    outline: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
-}
-
-/* .projeto-item:hover {
+.portfolio-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px #fafafa;
-} */
+}
 
 .project-image {
     width: 100%;
@@ -355,7 +318,7 @@ section.sobre .flex {
     object-fit: cover;
 }
 
-.projeto-item h3 {
+.portfolio-card h3 {
     font-size: 1.5rem;
     margin: 1rem;
 }
@@ -369,36 +332,36 @@ section.sobre .flex {
 
 .tech-icons i {
     font-size: 2rem;
-    color: var(--cor-secundaria);
+    color: #fcdb8d;
 }
 
-.projeto-item p {
+.portfolio-card p {
     padding: 0 1rem;
     margin-bottom: 1rem;
 }
 
-.btn-projeto {
+.btn-deploy {
     display: block;
     width: 80%;
     margin: 1rem auto;
     padding: 0.5rem;
-    background-color:  var(--cor-principal);
-    color:  var(--cor-fundo);
+    background-color: #C5B358 ;
+    color: #000;
     text-align: center;
     text-decoration: none;
     border-radius: 20px;
     transition: background-color 0.3s ease;
 }
 
-.btn-projeto:hover {
-    background-color:  var(--cor-secundaria);
+.btn-deploy:hover {
+    background-color: #fcdb8d;
     font-weight: 600;
     cursor: pointer;
 }
 
 /* ESTILO FORMS */
 section.formulario {
-    padding: 40px 4%;
+    padding: 80px 4%;
 }
 
 form {
@@ -420,12 +383,12 @@ form textarea {
     border-radius: 15px;
     outline: 0;
     padding: 15px 10px;
-    color:  var(--cor-texto);
+    color: #fafafa;
     font-size: 18px;
 }
 
 form input::placeholder {
-    color:  var(--cor-secundaria);
+    color: #fcdb8d;
 }
 
 form textarea {
@@ -434,7 +397,7 @@ form textarea {
 }
 
 form textarea::placeholder {
-    color:  var(--cor-secundaria);
+    color: #fcdb8d;
 }
 
 form .btn-enviar {
@@ -444,8 +407,8 @@ form .btn-enviar {
 
 form .btn-enviar input[type=submit] {
     width: 120px;
-    background-color:  var(--cor-principal);
-    color:  var(--cor-fundo);
+    background-color: #C5B358 ;
+    color: #000;
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
@@ -470,16 +433,16 @@ footer .line-footer {
 }
 
 .borda {
-    border-top: 2px solid var(--cor-secundaria);
+    border-top: 2px solid #fcdb8d;
 }
 
 footer .line-footer p i {
-    color: var(--cor-principal);
+    color: #C5B358 ;
     font-size: 22px;
 }
 
 footer .line-footer p a {
-    color:  var(--cor-texto);
+    color: #fafafa;
 }
 
 /* Media Query para telas menores */
@@ -539,12 +502,12 @@ footer .line-footer p a {
 
     /* ESPECIALIDADES */
     section.especiliadades {
-        padding: 40px 4%;
+        padding: 40px 8%;
     }
 
     /* SOBRE */
     section.sobre {
-        padding: 40px 4%;
+        padding: 80px 8%;
     }
 
     .sobre .txt-sobre h2 {
